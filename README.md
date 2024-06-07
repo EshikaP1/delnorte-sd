@@ -1,5 +1,5 @@
 # Team DelNorte-SD 2024 Wiki
-
+Testing changes
 This repository uses `TypeScript` and `React` to manage the wikis.
 
 This repository **MUST** contain all coding assets to generate your team's wiki
