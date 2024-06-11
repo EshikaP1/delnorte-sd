@@ -10,14 +10,13 @@
 }
 
 .home-page-container {
-    position: relaative;
+    position: relative;
     background-color: #00001a; /* Black container background */
     color: #fff; /* Light text color */
     width: max(100%);
     margin: 0 auto;
     flex-shrink: 0;
-    top: 0;
-    padding: 20px;
+    top: -30px;
     height: 14500px;
     display: flex; /* Use flexbox */
     z-index: 0;
