@@ -6,12 +6,12 @@
     /* flex-shrink: 0; */
     top: 0;
     /* box-shadow: inset 120px 0px 70px -30px #00001a, inset -120px 0px 70px -30px #00001a; */
-    background-color: #111149;
+    background: url("https://plus.unsplash.com/premium_photo-1693723596981-9a736a5966dd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG5hdnklMjBibHVlJTIwYXN0aGV0aWMlMjBiaW9sb2d5fGVufDB8fDB8fHww");
 }
 
 .home-page-container {
     position: relative;
-    background-color: #a7a7e6; /* Black container background */
+    background-color: #00001a; /* Black container background */
     color: #fff; /* Light text color */
     width: max(100%);
     margin: 0 auto;
