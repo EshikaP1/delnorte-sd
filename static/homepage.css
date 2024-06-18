@@ -6,12 +6,12 @@
     /* flex-shrink: 0; */
     top: 0;
     /* box-shadow: inset 120px 0px 70px -30px #00001a, inset -120px 0px 70px -30px #00001a; */
-    background: url("https://w0.peakpx.com/wallpaper/946/677/HD-wallpaper-biology-png-stickers-background-biology-cartoon.jpg");
+    background-color: #111149;
 }
 
 .home-page-container {
     position: relative;
-    background-color: #00001a; /* Black container background */
+    background-color: #a7a7e6; /* Black container background */
     color: #fff; /* Light text color */
     width: max(100%);
     margin: 0 auto;
