@@ -63,56 +63,56 @@
       Skin Acne and Bacterial infections!
     </div>
       <div>
-        # Overview
-Biofilm is made when the bacterial cells adhere to a surface and produce a matrix of Extracellular Polymeric Substance (EPS). They become embedded in this matrix and it protects them from being destroyed. Therefore, before destroying any bacteria, the extracellular matrix around is necessary to be destroyed first. This biofilm is mainly made up of mono and polysaccharides. In Cutibacterium Acne, major components that make up the biofilm include proteins, lipids, and sugars, which all help to maintain the structural integrity of the biofilm. By using enzyme inhibition/substrate analog inhibition/gene editing in targeting the N-acetylglucosamine-1-phosphate-uridyltransferase/glucosamine-1-phosphate-acetyltransferase (GlmU),  can be prevented and disrupt biofilm structure, which then can allow reach into destroying the bacteria that causes the acne that lays inside it. 
-Problem Statement
-Cutibacterium acnes is one of the most common forms of acne, affecting over 45 million individuals in the United States alone, particularly adolescents. Cutibacterium can implicate conditions such as endocarditis, endophthalmitis, septic arthritis, and more. Furthermore, acne vulgaris causes an immense amount of psychological distress, such as reduced mental health and self-esteem. This can further lead to the suffering of adolescents all across the United States. The Cutibacterium creates a protective biofilm on the skin, hindering the effectiveness of topical treatments for acne vulgaris. Destroying this biofilm is necessary for enhancing the value of acne treatments, further leading to improved skin appearance and overall acne management.
-Synthetic Biology Application
-This project utilizes synthetic biology to eradicate biofilms by targeting their polysaccharide matrix. Our project does this by targeting the N-acetylglucosamine-1-phosphate-uridyltransferase/glucosamine-1-phosphate-acetyltransferase (GlmU) enzyme found in Cutibacterium Acne. This can disrupt the biofilm structure which allows the destruction of the bacteria that causes acne. By using enzyme inhibitors, substrate analogs like UDP-2-deoxy-2-fluoro-N-acetylglucosamine or CRISPR-Cas9 to knock out genes encoding these enzymes, we aim to disrupt biofilm formation. This approach will expose the bacteria, allowing for their destruction and offering a potential treatment strategy for conditions like acne.
+      Overview:
+        Biofilm is made when the bacterial cells adhere to a surface and produce a matrix of Extracellular Polymeric Substance (EPS). They become embedded in this matrix and it protects them from being destroyed. Therefore, before destroying any bacteria, the extracellular matrix around is necessary to be destroyed first. This biofilm is mainly made up of mono and polysaccharides. In Cutibacterium Acne, major components that make up the biofilm include proteins, lipids, and sugars, which all help to maintain the structural integrity of the biofilm. By using enzyme inhibition/substrate analog inhibition/gene editing in targeting the N-acetylglucosamine-1-phosphate-uridyltransferase/glucosamine-1-phosphate-acetyltransferase (GlmU),  can be prevented and disrupt biofilm structure, which then can allow reach into destroying the bacteria that causes the acne that lays inside it. 
+        Problem Statement:
+          Cutibacterium acnes is one of the most common forms of acne, affecting over 45 million individuals in the United States alone, particularly adolescents. Cutibacterium can implicate conditions such as endocarditis, endophthalmitis, septic arthritis, and more. Furthermore, acne vulgaris causes an immense amount of psychological distress, such as reduced mental health and self-esteem. This can further lead to the suffering of adolescents all across the United States. The Cutibacterium creates a protective biofilm on the skin, hindering the effectiveness of topical treatments for acne vulgaris. Destroying this biofilm is necessary for enhancing the value of acne treatments, further leading to improved skin appearance and overall acne management.
+          Synthetic Biology Application
+          This project utilizes synthetic biology to eradicate biofilms by targeting their polysaccharide matrix. Our project does this by targeting the N-acetylglucosamine-1-phosphate-uridyltransferase/glucosamine-1-phosphate-acetyltransferase (GlmU) enzyme found in Cutibacterium Acne. This can disrupt the biofilm structure which allows the destruction of the bacteria that causes acne. By using enzyme inhibitors, substrate analogs like UDP-2-deoxy-2-fluoro-N-acetylglucosamine or CRISPR-Cas9 to knock out genes encoding these enzymes, we aim to disrupt biofilm formation. This approach will expose the bacteria, allowing for their destruction and offering a potential treatment strategy for conditions like acne.
 
-WHAT:
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6598116/: informational article, here we find out that the biofilm that we are trying to destroy is mainly made up of polysaccharides
-Basically how biofilm is made is when the bacterial cells adhere to a surface and produce a matrix of Extracellular Polymeric Substance (EPS). They become embedded in this matrix and it protects them from being destroyed. Therefore, destroying the matrix is necessary to thereby destroy the bacteria inside.
-HOW:
-O-Antigen nucleotide sugar biosynthesis - Reference pathway
-https://www.kegg.jp/pathway/map00541 
-<img src="\delnorte-sd\Screenshot_2024-06-18_024830.png" alt="Pathway Targeted">
+        WHAT:
+          https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6598116/: informational article, here we find out that the biofilm that we are trying to destroy is mainly made up of polysaccharides
+          Basically how biofilm is made is when the bacterial cells adhere to a surface and produce a matrix of Extracellular Polymeric Substance (EPS). They become embedded in this matrix and it protects them from being destroyed. Therefore, destroying the matrix is necessary to thereby destroy the bacteria inside.
+          HOW:
+          O-Antigen nucleotide sugar biosynthesis - Reference pathway
+          https://www.kegg.jp/pathway/map00541 
+          <img src="\delnorte-sd\Screenshot_2024-06-18_024830.png" alt="Pathway Targeted">
 
-SPECIFIC WAYS TO DESTROY:
-key enzymes: 
-bifunctional UDP-N-acetylglucosamine pyrophosphorylase / glucosamine-1-phosphate N-acetyltransferase:
-C00075 + C04501 <=> C00013 + C00043 This is the reaction that the enzyme catalyzes. 
+          SPECIFIC WAYS TO DESTROY:
+          key enzymes: 
+            bifunctional UDP-N-acetylglucosamine pyrophosphorylase / glucosamine-1-phosphate N-acetyltransferase:
+            C00075 + C04501 <=> C00013 + C00043 This is the reaction that the enzyme catalyzes. 
 	
-Given Comment: Part of the pathway for acetamido sugar biosynthesis in bacteria and archaea. The enzyme from several bacteria (e.g., Escherichia coli, Bacillus subtilis and Haemophilus influenzae) has been shown to be bifunctional and also to possess the activity of EC 2.3.1.157, glucosamine-1-phosphate N-acetyltransferase [3,4,6]. The enzyme from plants and animals is also active toward N-acetyl-alpha-D-galactosamine 1-phosphate (cf. EC 2.7.7.83, UDP-N-acetylgalactosamine diphosphorylase) [5,7], while the bacterial enzyme shows low activity toward that substrate [4].
-https://www.kegg.jp/entry/K04042+2.7.7.23+R00416 
-https://www.sciencedirect.com/science/article/pii/S2472555222070952#:~:text=develop%20antibacterial%20molecules.-,Escherichia%20coli%20N%2Dacetylglucosamine%2D1%2Dphosphate%2Duridyltransferase%2F,Gram%2Dnegative%20bacteria%2C%20respectively.:
-“Escherichia coli N-acetylglucosamine-1-phosphate-uridyltransferase/glucosamine-1-phosphate-acetyltransferase (GlmU) is one such enzyme that is involved in the biosynthesis of peptidoglycan and lipopolysaccharide in Gram-positive and Gram-negative bacteria, respectively. GlmU-catalyzed reactions lead to the formation of UDP-N-acetylglucosamine-1-P from glucosamine-1-P (UDP-GlcNAc) in a two-step reaction of acetylation and uridylation.”
-Bard Reaffirmed this enzyme:
-Here's a breakdown of why GlmU is not found in human cells:
-Species specificity: Enzymes are often designed to work only with the molecules found within a specific organism. GlmU is optimized for the bacterial environment of E. coli and wouldn't function correctly in a human cell.
-Different metabolic pathways: Humans synthesize UDP-GlcNAc through a different set of enzymes than E. coli. This means there's no evolutionary pressure for human cells to have GlmU.
-If we wish to use CRISPR 9…the genes encoding for this protein are all listed on the Kegg pathway.
-mannose-1-phosphate guanylyltransferase:
-Given comment: The bacterial enzyme can also use ITP and dGTP as donors.
-https://www.kegg.jp/entry/K00971+K16011+2.7.7.13+R00885 
-C00044 + C00636 <=> C00013 + C00096
+            Given Comment: Part of the pathway for acetamido sugar biosynthesis in bacteria and archaea. The enzyme from several bacteria (e.g., Escherichia coli, Bacillus subtilis and Haemophilus influenzae) has been shown to be bifunctional and also to possess the activity of EC 2.3.1.157, glucosamine-1-phosphate N-acetyltransferase [3,4,6]. The enzyme from plants and animals is also active toward N-acetyl-alpha-D-galactosamine 1-phosphate (cf. EC 2.7.7.83, UDP-N-acetylgalactosamine diphosphorylase) [5,7], while the bacterial enzyme shows low activity toward that substrate [4].
+              + https://www.kegg.jp/entry/K04042+2.7.7.23+R00416 
+              + https://www.sciencedirect.com/science/article/pii/S2472555222070952#:~:text=develop%20antibacterial%20molecules.-,Escherichia%20coli%20N%2Dacetylglucosamine%2D1%2Dphosphate%2Duridyltransferase%2F,Gram%2Dnegative%20bacteria%2C%20respectively.:
+              + “Escherichia coli N-acetylglucosamine-1-phosphate-uridyltransferase/glucosamine-1-phosphate-acetyltransferase (GlmU) is one such enzyme that is involved in the biosynthesis of peptidoglycan and lipopolysaccharide in Gram-positive and Gram-negative bacteria, respectively. GlmU-catalyzed reactions lead to the formation of UDP-N-acetylglucosamine-1-P from glucosamine-1-P (UDP-GlcNAc) in a two-step reaction of acetylation and uridylation.”
+              Bard Reaffirmed this enzyme:
+                Here's a breakdown of why GlmU is not found in human cells:
+                Species specificity: Enzymes are often designed to work only with the molecules found within a specific organism. GlmU is optimized for the bacterial environment of E. coli and wouldn't function correctly in a human cell.
+                Different metabolic pathways: Humans synthesize UDP-GlcNAc through a different set of enzymes than E. coli. This means there's no evolutionary pressure for human cells to have GlmU.
+                If we wish to use CRISPR 9…the genes encoding for this protein are all listed on the Kegg pathway.
+                mannose-1-phosphate guanylyltransferase:
+              Given comment: The bacterial enzyme can also use ITP and dGTP as donors.
+              https://www.kegg.jp/entry/K00971+K16011+2.7.7.13+R00885 
+              C00044 + C00636 <=> C00013 + C00096
 
 
 
 
 
-How and why we chose/inspiration behind it. 
-Targeting Cutibacterium Acne was a significant topic for us because there are many people all around us who struggle with acne. By focusing on targeting acne, we can make a real impact and transform lives. Acne isn't just a skin condition; it’s a daily struggle that impacts mental health, self-confidence, and social interactions. More than that, it can be a serious health problem for severe cases, causing scarring and secondary infection. Addressing acne comprehensively is very prevalent in our world today and crucial for overall health and well-being. An enzyme based treatment can revolutionize skincare, improving the skin of many without harsh chemical treatments. We found that focusing on acne and cosmetics was something that we were passionate about and something that we believed could really make a difference in our world to so many people.
-Sources-
+              How and why we chose/inspiration behind it. 
+                Targeting Cutibacterium Acne was a significant topic for us because there are many people all around us who struggle with acne. By focusing on targeting acne, we can make a real impact and transform lives. Acne isn't just a skin condition; it’s a daily struggle that impacts mental health, self-confidence, and social interactions. More than that, it can be a serious health problem for severe cases, causing scarring and secondary infection. Addressing acne comprehensively is very prevalent in our world today and crucial for overall health and well-being. An enzyme based treatment can revolutionize skincare, improving the skin of many without harsh chemical treatments. We found that focusing on acne and cosmetics was something that we were passionate about and something that we believed could really make a difference in our world to so many people.
+              Sources-
 
-Mayslich, Constance et al. “Cutibacterium acnes as an Opportunistic Pathogen: An Update of Its Virulence-Associated Factors.” Microorganisms vol. 9,2 303. 2 Feb. 2021, doi:10.3390/microorganisms9020303
+                Mayslich, Constance et al. “Cutibacterium acnes as an Opportunistic Pathogen: An Update of Its Virulence-Associated Factors.” Microorganisms vol. 9,2 303. 2 Feb. 2021, doi:10.3390/microorganisms9020303
 
-Koo, H et al. “Exopolysaccharides produced by Streptococcus mutans glucosyltransferases modulate the establishment of microcolonies within multispecies biofilms.” Journal of Bacteriology vol. 192,12 (2010): 3024-32. doi:10.1128/JB.01649-09
+                Koo, H et al. “Exopolysaccharides produced by Streptococcus mutans glucosyltransferases modulate the establishment of microcolonies within multispecies biofilms.” Journal of Bacteriology vol. 192,12 (2010): 3024-32. doi:10.1128/JB.01649-09
 
-Gannesen, Andrei V et al. “Composition of the Biofilm Matrix of Cutibacterium acnes Acneic Strain RT5.” Frontiers in microbiology vol. 10 1284. 21 Jun. 2019, doi:10.3389/fmicb.2019.01284
-Goals
-Destroy the extracellular matrix of biofilm in C. Acnes with _____ (method here)
-(maybe) Use an antimicrobial drug/virulence factor  to target the bacteria inside once the biofilm is degraded
+                Gannesen, Andrei V et al. “Composition of the Biofilm Matrix of Cutibacterium acnes Acneic Strain RT5.” Frontiers in microbiology vol. 10 1284. 21 Jun. 2019, doi:10.3389/fmicb.2019.01284
+                Goals
+                Destroy the extracellular matrix of biofilm in C. Acnes with _____ (method here)
+                (maybe) Use an antimicrobial drug/virulence factor  to target the bacteria inside once the biofilm is degraded
 
 
 Lab Outline Ideas
