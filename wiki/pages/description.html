@@ -1,19 +1,14 @@
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!DOCTYPE html>
-<html lang="en">
 <head>
+  {% extends "layout.html" %}
+  
+  {% block title %}Project Description{% endblock %}
+
+  {% block page_content %}
+</head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
     .container {
       background-color: #e8f5e9;
       border: 2px solid #4caf50;
@@ -22,6 +17,7 @@
       margin: 20px;
       font-family: Arial, sans-serif;
       line-height: 1.6;
+      text-align: center; /* Added to center the text */
     }
     .section-title {
       font-size: 2em;
@@ -37,12 +33,7 @@
       color: #1b5e20;
     }
   </style>
-</head>
-<head>
-  <div class="container">
-    <div class="section-title">Project Description</div>
-  </div>
-</head>
+
 <body>
   <div class="container">
       <h1 class="section-title">Overview:</h1>
