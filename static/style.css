@@ -1,5 +1,5 @@
 
-.left-aligned { margin-left: auto; }
+.left-aligned { align-items: center; }
 .bg-dark { background-color: #343a40 !important; }
 .bg-hero { background-color: #45b06cff; }
 
