@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
 ul {    
     position:relative;
     list-style-type: none;
@@ -14,13 +16,55 @@ ul {
 }
 ul li {
     margin: 0 15px; 
-   
+    display: flex; /*if anything weird happens with the navbar this is prob why*/
+    align-items: center;
+    color:white;
+    transition:all .5s;
+    cursor:pointer;
 }
+
+.transP5
+{
+    transition: all .5s;
+}
+
+
+ul li span
+{
+    transition: all .5s;
+}
+
 ul li a {
     color: white;  
     text-decoration: none;  
     font-size: 20px;  /* Increase font size */
+    transition:all .5s;
 }
 ul li a:hover {
     color: rgb(0, 13, 255);  
+}
+
+
+ul li:hover
+{
+    background-color: rgb(199,199,199);
+}
+.DropDownWrapper
+{
+    position: absolute;
+    top: 30px;
+    background-color: #636363;
+    display: none;
+    transition: all .5s;
+}
+
+.isDrop:hover .dropTriangle
+{
+    transform: rotate(180deg);
+}
+
+.isDrop:hover .DropDownWrapper
+{
+    display: grid;
+    filter:opacity(1)
 }
