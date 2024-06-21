@@ -8,7 +8,7 @@ ul {
     display: flex;  
     align-items: center;
     justify-content: center;
-    background: rgba(0,0,0,0.4);
+    background: rgb(226, 222, 222);
     z-index:10;
     font-size: large;
 
