@@ -56,6 +56,7 @@ ul li:hover
     background-color: #636363;
     display: none;
     transition: all .5s;
+    transform:translateX(-25%);
 }
 
 .isDrop:hover .dropTriangle
