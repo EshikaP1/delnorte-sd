@@ -1,19 +1,17 @@
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!DOCTYPE html>
-<html lang="en">
+<!-- <head>
+  {% extends "layout.html" %}
+  {% block title %}Project Description{% endblock %}
+
+  {% block page_content %}
+</head>
+-->
 <head>
+  Project Description!
+</head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
     .container {
       background-color: #e8f5e9;
       border: 2px solid #4caf50;
@@ -22,6 +20,8 @@
       margin: 20px;
       font-family: Arial, sans-serif;
       line-height: 1.6;
+      text-align: center; /* Added to center the text */
+      align-items: center;
     }
     .section-title {
       font-size: 2em;
@@ -37,12 +37,7 @@
       color: #1b5e20;
     }
   </style>
-</head>
-<head>
-  <div class="container">
-    <div class="section-title">Project Description</div>
-  </div>
-</head>
+
 <body>
   <div class="container">
       <h1 class="section-title">Overview:</h1>
@@ -116,15 +111,6 @@
         Gannesen, Andrei V et al. “Composition of the Biofilm Matrix of Cutibacterium acnes Acneic Strain RT5.” Frontiers in microbiology vol. 10 1284. 21 Jun. 2019, doi:10.3389/fmicb.2019.01284
       </p>
       <p>
-        Goals:
-      </p>
-      <p>
-        Destroy the extracellular matrix of biofilm in C. Acnes with _____ (method here)
-      </p>
-      <p>
-        (maybe) Use an antimicrobial drug/virulence factor to target the bacteria inside once the biofilm is degraded
-      </p>
-      <p>
         Lab Outline Ideas:
       </p>
       <p>
@@ -151,6 +137,4 @@
         Using fibrinogen (plasma protein) to bind to the biofilm - can use 58 kDa protein called PA25957
       </p>
   </div>
-
-
 {% endblock %}
