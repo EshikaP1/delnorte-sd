@@ -1,140 +1,163 @@
-
-<!-- <head>
-  {% extends "layout.html" %}
-  {% block title %}Project Description{% endblock %}
-
-  {% block page_content %}
-</head>
--->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  Project Description!
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Description</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            flex-direction: column;
+        }
+        .content-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .container {
+            background-color: #e8f5e9;
+            border: 2px solid #4caf50;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            text-align: center;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            font-size: 2em;
+            color: #388e3c;
+            margin-bottom: 10px;
+        }
+        .subsection-title {
+            font-size: 1.5em;
+            color: #388e3c;
+            margin-top: 20px;
+        }
+        a {
+            color: #1b5e20;
+        }
+        /* Specific styles for project title, overview, and WHAT sections */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: #388e3c;
+        }
+        .overview-container {
+            background-color: #e8f5e9;
+            border: 2px solid #4caf50;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            text-align: left; /* Adjust alignment as needed */
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .what-container {
+            background-color: #e8f5e9;
+            border: 2px solid #4caf50;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            text-align: left; /* Adjust alignment as needed */
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    .container {
-      background-color: #e8f5e9;
-      border: 2px solid #4caf50;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      text-align: center; /* Added to center the text */
-      align-items: center;
-    }
-    .section-title {
-      font-size: 2em;
-      color: #388e3c;
-      margin-bottom: 10px;
-    }
-    .subsection-title {
-      font-size: 1.5em;
-      color: #388e3c;
-      margin-top: 20px;
-    }
-    a {
-      color: #1b5e20;
-    }
-  </style>
-
 <body>
-  <div class="container">
-      <h1 class="section-title">Overview:</h1>
-      <p>
-        Biofilm is made when the bacterial cells adhere to a surface and produce a matrix of Extracellular Polymeric Substance (EPS). They become embedded in this matrix and it protects them from being destroyed. Therefore, before destroying any bacteria, the extracellular matrix around is necessary to be destroyed first. This biofilm is mainly made up of mono and polysaccharides. In Cutibacterium Acne, major components that make up the biofilm include proteins, lipids, and sugars, which all help to maintain the structural integrity of the biofilm. By using enzyme inhibition/substrate analog inhibition/gene editing in targeting the N-acetylglucosamine-1-phosphate-uridyltransferase/glucosamine-1-phosphate-acetyltransferase (GlmU),  can be prevented and disrupt biofilm structure, which then can allow reach into destroying the bacteria that causes the acne that lays inside it.
-      </p>
-      <p>
-        Problem Statement:
-        Cutibacterium acnes is one of the most common forms of acne, affecting over 45 million individuals in the United States alone, particularly adolescents. Cutibacterium can implicate conditions such as endocarditis, endophthalmitis, septic arthritis, and more. Furthermore, acne vulgaris causes an immense amount of psychological distress, such as reduced mental health and self-esteem. This can further lead to the suffering of adolescents all across the United States. The Cutibacterium creates a protective biofilm on the skin, hindering the effectiveness of topical treatments for acne vulgaris. Destroying this biofilm is necessary for enhancing the value of acne treatments, further leading to improved skin appearance and overall acne management.
-      </p>
-      <p>
-        Synthetic Biology Application:
-        This project utilizes synthetic biology to eradicate biofilms by targeting their polysaccharide matrix. Our project does this by targeting the N-acetylglucosamine-1-phosphate-uridyltransferase/glucosamine-1-phosphate-acetyltransferase (GlmU) enzyme found in Cutibacterium Acne. This can disrupt the biofilm structure which allows the destruction of the bacteria that causes acne. By using enzyme inhibitors, substrate analogs like UDP-2-deoxy-2-fluoro-N-acetylglucosamine or CRISPR-Cas9 to knock out genes encoding these enzymes, we aim to disrupt biofilm formation. This approach will expose the bacteria, allowing for their destruction and offering a potential treatment strategy for conditions like acne.
-      </p>
-    </div>
-  
-    <div>
-      <h1 class="section-title">WHAT:</h1>
-      <p>
-        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6598116/">Informational article</a>, here we find out that the biofilm that we are trying to destroy is mainly made up of polysaccharides. Basically how biofilm is made is when the bacterial cells adhere to a surface and produce a matrix of Extracellular Polymeric Substance (EPS). They become embedded in this matrix and it protects them from being destroyed. Therefore, destroying the matrix is necessary to thereby destroy the bacteria inside.
-      </p>
-    </div>
-  
-    <div>
-      <h1 class="section-title">HOW:</h1>
-      <p>
-        O-Antigen nucleotide sugar biosynthesis - Reference pathway:
-        <a href="https://www.kegg.jp/pathway/map00541">Pathway Targeted</a>
-      </p>
-      <img src="static/image/PathwayTarget.png" style="width:100%;" alt="Pathway Targeted">
-    </div>
-  
-    <div>
-      <h1 class="section-title">SPECIFIC WAYS TO DESTROY:</h1>
-      <h1 class="subsection-title">Key Enzymes:</h1>
-      <p>
-        Bifunctional UDP-N-acetylglucosamine pyrophosphorylase / glucosamine-1-phosphate N-acetyltransferase:
-        C00075 + C04501 <=> C00013 + C00043 This is the reaction that the enzyme catalyzes.
-      </p>
-      <h1 class="subsection-title">Given Comment:</h1>
-      <p>
-        Part of the pathway for acetamido sugar biosynthesis in bacteria and archaea. The enzyme from several bacteria (e.g., Escherichia coli, Bacillus subtilis and Haemophilus influenzae) has been shown to be bifunctional and also to possess the activity of EC 2.3.1.157, glucosamine-1-phosphate N-acetyltransferase. The enzyme from plants and animals is also active toward N-acetyl-alpha-D-galactosamine 1-phosphate (cf. EC 2.7.7.83, UDP-N-acetylgalactosamine diphosphorylase), while the bacterial enzyme shows low activity toward that substrate.
-      </p>
-      <p>
-        If we wish to use CRISPR 9…the genes encoding for this protein are all listed on the Kegg pathway.
-      </p>
-      <p>
-        Mannose-1-phosphate guanylyltransferase:
-      </p>
-      <p>
-        Given comment: The bacterial enzyme can also use ITP and dGTP as donors.
-        <a href="https://www.kegg.jp/entry/K00971+K16011+2.7.7.13+R00885">Pathway Reference</a>
-      </p>
-      <p>
-        C00044 + C00636 <=> C00013 + C00096
-      </p>
-      <p>
-        How and why we chose/inspiration behind it:
-        Targeting Cutibacterium Acne was a significant topic for us because there are many people all around us who struggle with acne. By focusing on targeting acne, we can make a real impact and transform lives. Acne isn't just a skin condition; it’s a daily struggle that impacts mental health, self-confidence, and social interactions. More than that, it can be a serious health problem for severe cases, causing scarring and secondary infection. Addressing acne comprehensively is very prevalent in our world today and crucial for overall health and well-being. An enzyme based treatment can revolutionize skincare, improving the skin of many without harsh chemical treatments. We found that focusing on acne and cosmetics was something that we were passionate about and something that we believed could really make a difference in our world to so many people.
-      </p>
-      <p>
-        Sources:
-      </p>
-      <p>
-        Mayslich, Constance et al. “Cutibacterium acnes as an Opportunistic Pathogen: An Update of Its Virulence-Associated Factors.” Microorganisms vol. 9,2 303. 2 Feb. 2021, doi:10.3390/microorganisms9020303
-      </p>
-      <p>
-        Koo, H et al. “Exopolysaccharides produced by Streptococcus mutans glucosyltransferases modulate the establishment of microcolonies within multispecies biofilms.” Journal of Bacteriology vol. 192,12 (2010): 3024-32. doi:10.1128/JB.01649-09
-      </p>
-      <p>
-        Gannesen, Andrei V et al. “Composition of the Biofilm Matrix of Cutibacterium acnes Acneic Strain RT5.” Frontiers in microbiology vol. 10 1284. 21 Jun. 2019, doi:10.3389/fmicb.2019.01284
-      </p>
-      <p>
-        Lab Outline Ideas:
-      </p>
-      <p>
-        Availability and Lab Needs:
-      </p>
-      <p>
-        Hyla-A/B
-      </p>
-      <p>
-        Using his known inhibitors to engineer a probiotic or topical that prevents acne production by suppressing Hyla-A
-      </p>
-      <p>
-        Biofilm resistance:
-      </p>
-      <p>
-        Targeting the extracellular matrix → focus on sessile cells, which produces extracellular lipases
-      <p>
-        Using an antimicrobial drug or a virulence factor by focusing on a pathway to target the actual bacteria (after the biofilm is degraded)
-      </p>
-      <p>
-        Fibrinogen
-      </p>
-      <p>
-        Using fibrinogen (plasma protein) to bind to the biofilm - can use 58 kDa protein called PA25957
-      </p>
-  </div>
-{% endblock %}
+    <header>
+        <h1>Project Description</h1>
+    </header>
+    <div class="container">
+            <h1 class="section-title">
+                Overview:</h1>
+            <div class="overview-container">
+            <p>
+            </h7>
+                Biofilm is made when the bacterial cells adhere to a surface and produce a matrix of Extracellular Polymeric Substance (EPS). 
+                They become embedded in this matrix and it protects them from being destroyed. Therefore, before destroying any bacteria, the extracellular matrix around is necessary to be destroyed first.
+                This biofilm is mainly made up of mono and polysaccharides. In Cutibacterium Acne, major components that make up the biofilm include proteins, lipids, and sugars, which all help to maintain the structural integrity of the biofilm. 
+                By using enzyme inhibition/substrate analog inhibition/gene editing in targeting the N-acetylglucosamine-1-phosphate-uridyltransferase/glucosamine-1-phosphate-acetyltransferase (GlmU), can be prevented and disrupt biofilm structure, which then can allow reach into destroying the bacteria that causes the acne that lays inside it.
+            </h7>
+                <h5> Problem Statement: </h5>
+            <h7>
+                Cutibacterium acnes is one of the most common forms of acne, affecting over 45 million individuals in the United States alone, particularly adolescents.
+                Cutibacterium can implicate conditions such as endocarditis, endophthalmitis, septic arthritis, and more. \
+                Furthermore, acne vulgaris causes an immense amount of psychological distress, such as reduced mental health and self-esteem. 
+                This can further lead to the suffering of adolescents all across the United States. The Cutibacterium creates a protective biofilm on the skin, hindering the effectiveness of topical treatments for acne vulgaris.
+                Destroying this biofilm is necessary for enhancing the value of acne treatments, further leading to improved skin appearance and overall acne management.
+            </h7>
+                <h5>Synthetic Biology Application: </h5>
+            <h7>
+                This project utilizes synthetic biology to eradicate biofilms by targeting their polysaccharide matrix. 
+                Our project does this by targeting the N-acetylglucosamine-1-phosphate-uridyltransferase/glucosamine-1-phosphate-acetyltransferase (GlmU) enzyme found in Cutibacterium Acne. 
+                This can disrupt the biofilm structure which allows the destruction of the bacteria that causes acne. 
+                By using enzyme inhibitors, substrate analogs like UDP-2-deoxy-2-fluoro-N-acetylglucosamine or CRISPR-Cas9 to knock out genes encoding these enzymes, we aim to disrupt biofilm formation. 
+                This approach will expose the bacteria, allowing for their destruction and offering a potential treatment strategy for conditions like acne.
+            </h7>
+            </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 class="section-title">WHAT:</h1>
+            <div class="what-container">
+                <p>
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6598116/">Informational article</a>, here we find out that the biofilm that we are trying to destroy is mainly made up of polysaccharides. Basically how biofilm is made is when the bacterial cells adhere to a surface and produce a matrix of Extracellular Polymeric Substance (EPS). They become embedded in this matrix and it protects them from being destroyed. Therefore, destroying the matrix is necessary to thereby destroy the bacteria inside.
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 class="section-title">HOW:</h1>
+            <p>
+                O-Antigen nucleotide sugar biosynthesis - Reference pathway:
+                <a href="https://www.kegg.jp/pathway/map00541">Pathway Targeted</a>
+            </p>
+            <img src="static/image/PathwayTarget.png" style="width:100%;" alt="Pathway Targeted">
+        </div>
+
+        <div class="container">
+            <h1 class="section-title">SPECIFIC WAYS TO DESTROY:</h1>
+            <h1 class="subsection-title">Key Enzymes:</h1>
+            <p>
+                Bifunctional UDP-N-acetylglucosamine pyrophosphorylase / glucosamine-1-phosphate N-acetyltransferase:
+                C00075 + C04501 <=> C00013 + C00043 This is the reaction that the enzyme catalyzes.
+            </p>
+            <h1 class="subsection-title">Given Comment:</h1>
+            <p>
+                Part of the pathway for acetamido sugar biosynthesis in bacteria and archaea. The enzyme from several bacteria (e.g., Escherichia coli, Bacillus subtilis and Haemophilus influenzae) has been shown to be bifunctional and also to possess the activity of EC 2.3.1.157, glucosamine-1-phosphate N-acetyltransferase. The enzyme from plants and animals is also active toward N-acetyl-alpha-D-galactosamine 1-phosphate (cf. EC 2.7.7.83, UDP-N-acetylgalactosamine diphosphorylase), while the bacterial enzyme shows low activity toward that substrate.
+            </p>
+            <p>
+                If we wish to use CRISPR 9…the genes encoding for this protein are all listed on the Kegg pathway.
+            </p>
+            <p>
+                Mannose-1-phosphate guanylyltransferase:
+            </p>
+            <p>
+                Given comment: The bacterial enzyme can also use ITP and dGTP as donors.
+                <a href="https://www.kegg.jp/entry/K00971+K16011+2.7.7.13+R00885">Pathway Reference</a>
+            </p>
+            <p>
+                C00044 + C00636 <=> C00013 + C00096
+            </p>
+            <p>
+                How and why we chose/inspiration behind it
