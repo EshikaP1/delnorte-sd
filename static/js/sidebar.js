@@ -1,5 +1,19 @@
 let sidebarModal = document.getElementById("SidebarDarkModal")
+let sidebar = document.getElementById("Sidebar")
 function toggleSidebar()
 {
-    sidebarModal.style.opacity = 0;
+    if(window.getComputedStyle(sidebarModal).opacity == 0)
+    {
+        sidebarModal.style.opacity = 100;
+        sidebar.style.cssText = "transform: translateX(0px); box-shadow: 41px 0px 27px 10px #0000002b;"
+    }
+    else
+    {
+        sidebarModal.style.opacity = 0;
+        sidebar.style.cssText = "transform: translateX(-300px); box-shadow: 0;"
+    }
+
+
+
+    
 }

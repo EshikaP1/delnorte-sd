@@ -10,8 +10,8 @@
     background-color: #45b06cff;
     z-index: 5;
     border-right: 2px solid white;
-    box-shadow: 41px 0px 27px 10px #0000002b;
-    display:none;
+    /*box-shadow: 41px 0px 27px 10px #0000002b;*/
+    transition: all .5s;
 }
 
 #Sidebar ul
@@ -89,7 +89,7 @@
     top:0;
     z-index: 4;
     transition:all .5s;
-    display:none;
+    opacity: 0;
     pointer-events: none;/*do note that this means people can still interact with the website while this menus open*/
 }
 

@@ -27,10 +27,11 @@
 <body>
   <!-- Navigation -->
   <!--{% include 'menu.html' %}-->
-  {% include 'sidebar.html' %}
+  
 
   <!-- Header -->
   <header class="bg-hero py-5 mb-5">
+    <span class="material-symbols-outlined" id="SidebarCloseMenu" onclick="toggleSidebar()" style="transform:rotate(180deg)">menu_open</span>
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-lg-12">
@@ -40,6 +41,8 @@
       </div>
     </div>
   </header>
+
+  {% include 'sidebar.html' %}
 
   <!-- Page Content -->
   <div class="container">
