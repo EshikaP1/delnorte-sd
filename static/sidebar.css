@@ -36,11 +36,15 @@
 .DropdownTitle
 {
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .DropdownContent
 {
     padding-left:30px !important;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all .5s;
 }
 
 #MenuLogo

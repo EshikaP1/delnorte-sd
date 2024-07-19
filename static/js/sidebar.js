@@ -12,8 +12,18 @@ function toggleSidebar()
         sidebarModal.style.opacity = 0;
         sidebar.style.cssText = "transform: translateX(-300px); box-shadow: 0;"
     }
+}
 
-
-
-    
+function toggleDropdown(el)
+{
+ let parent = el.parentElement
+ let dropContent = parent.querySelector(".DropdownContent") 
+ if(window.getComputedStyle(dropContent).maxHeight == "0px")
+ {
+    dropContent.style.maxHeight = dropContent.scrollHeight + "px"
+    el.querySelector("span").innerText = "unfold_less"
+    return
+ }
+ dropContent.style.maxHeight = "0px"
+ el.querySelector("span").innerText = "unfold_more"
 }
