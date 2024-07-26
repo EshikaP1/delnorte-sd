@@ -5,19 +5,67 @@
         <div id="LogoWrapper">
             <img id="MenuLogo" src="static/image/image.png">
         </div>
-    <ul>
-        <li>Home</li>
+    <ul> <!--insert stuff into the dropdown menu here-->
+        <li>Home</li> <!--if it's not a dropdown and stands alone do this-->
+        <!--otherwise do this
+        <div>
+       <li class="DropdownTitle" onclick="toggleDropdown(this)"> [TITLE TEXT] <span class="material-symbols-outlined">
+        unfold_more
+        </span></li>
+        <ul class="DropdownContent"> insert stuff here
+            <li> [DROPDOWN ITEM] </li>
+            <li> [DROPDOWN ITEM] </li>
+        </ul>
+    </div>
+    -->
     <div>
-       <li class="DropdownTitle" onclick="toggleDropdown(this)">Dropdown Title <span class="material-symbols-outlined">
+       <li class="DropdownTitle" onclick="toggleDropdown(this)">Team<span class="material-symbols-outlined">
         unfold_more
         </span></li>
         <ul class="DropdownContent">
-            <li>Dropdown Item</li>
-            <li>Dropdown Item</li>
-            <li>Dropdown Item</li>
+            <li>Team</li>
+            <li>Attributions</li>
+            <li>Collaborations</li>
         </ul>
     </div>
-        <li>Another</li>
+    <div>
+        <li class="DropdownTitle" onclick="toggleDropdown(this)">Project<span class="material-symbols-outlined">
+         unfold_more
+         </span></li>
+         <ul class="DropdownContent">
+             <li>Communication</li>
+             <li>Contribution</li>
+             <li>Description</li>
+             <li>Engineering</li>
+             <li>Implementation</li>
+             <li>Partnership</li>
+             <li>Proof Of Concept</li>
+             <li>Results</li>
+         </ul>
+     </div>
+        <li>Model</li>
+        <div>
+            <li class="DropdownTitle" onclick="toggleDropdown(this)">Parts<span class="material-symbols-outlined">
+             unfold_more
+             </span></li>
+             <ul class="DropdownContent">
+                 <li>Part Collection</li>
+                 <li>Improve</li>
+             </ul>
+         </div>
+         <li>Safety</li>
+         <li>Human Practices</li>
+         <div>
+            <li class="DropdownTitle" onclick="toggleDropdown(this)">Awards<span class="material-symbols-outlined">
+             unfold_more
+             </span></li>
+             <ul class="DropdownContent">
+                 <li>Education</li>
+                 <li>Entrepreneurship</li>
+                 <li>Sustainable</li>
+             </ul>
+         </div>
+         <li>Safety</li>
     </ul>
 </div>
 <div id="SidebarDarkModal">
