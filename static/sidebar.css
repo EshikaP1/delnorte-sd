@@ -25,13 +25,35 @@
 {
     text-decoration: none;
     width:100%;
-    background-color: white;
+    background-color: #bdf6b2;
     height:50px;
     display:flex;
     align-items: center;
+    position:relative;
     padding:10px;
     border-radius: 10px;
     margin-bottom: 5px;
+    transition: all .25s;
+    cursor: pointer;
+}
+
+#Sidebar li a
+{
+  position:absolute;
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+}
+
+.selectedPage
+{
+  background-color: #93fe7e;
+}
+
+#Sidebar li:hover
+{
+  background-color: #93fe7e;
 }
 
 .DropdownTitle
@@ -101,6 +123,7 @@
 #SidebarCloseMenu
 {
   cursor: pointer; 
+  font-size: 32px;
 }
 
 /* width */

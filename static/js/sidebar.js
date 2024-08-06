@@ -27,3 +27,9 @@ function toggleDropdown(el)
  dropContent.style.maxHeight = "0px"
  el.querySelector("span").innerText = "unfold_more"
 }
+
+//highlight the page
+let dropSelect = location.pathname.split("/").slice(-1)[0]
+dropSelect = dropSelect.charAt(0).toUpperCase() + dropSelect.slice(1)
+
+console.log(document.getElementById("dd"+dropSelect))
