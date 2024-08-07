@@ -82,3 +82,9 @@ footer a:hover { color: white; text-decoration: underline; }
 {
     box-shadow: rgba(226, 196, 3, 0.619) 0 0 8px 8px;
 }
+
+#deckHolder
+{
+    display:grid;
+    grid-template-columns: auto;
+}
