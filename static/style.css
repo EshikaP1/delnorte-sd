@@ -25,7 +25,7 @@ footer a:hover { color: white; text-decoration: underline; }
 .mainCard
 {
     position:relative;
-    height:300px;
+    height:400px;
     width:300px;
     perspective: 1000px;
     border-radius: 10px;
@@ -41,6 +41,7 @@ footer a:hover { color: white; text-decoration: underline; }
     width:100%;
     box-shadow: 8px 18px 7px 0 rgba(0, 0, 0, 0.2);
     backface-visibility: hidden;
+    border-radius: 10px;
 }
 
 .cardFront
@@ -53,6 +54,7 @@ footer a:hover { color: white; text-decoration: underline; }
     width:100%;
     border-radius: 10px;
     background-color: transparent;
+    overflow: hidden;
 }
 
 .cardBack
@@ -60,15 +62,23 @@ footer a:hover { color: white; text-decoration: underline; }
     height:100%;
     position:absolute;
     width:100%;
-    background-color: blue;
+    background-color: #93fe7e;
     backface-visibility: hidden;
+    padding:5px;
     left:0;
     top:0;
     transform: rotateY(180deg);
     border-radius: 10px;
+    box-shadow: inset 0 0 20px 3px #22910c;
+    transition: all .5s;
 }
 
 .mainCard:hover .cardHold
 {
     transform:rotateY(540deg);
+}
+
+.mainCard:hover .cardBack
+{
+    box-shadow: rgba(226, 196, 3, 0.619) 0 0 8px 8px;
 }
