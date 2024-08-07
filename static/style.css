@@ -19,5 +19,56 @@ footer a:hover { color: white; text-decoration: underline; }
 
 .teamPhoto
 {
-    border-radius: 5px;
+    width:100%;
+}
+
+.mainCard
+{
+    position:relative;
+    height:300px;
+    width:300px;
+    perspective: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cardHold
+{
+    transform-style: preserve-3d;
+    position:relative;
+    transition: all .5s;
+    background-color: transparent;
+    height:100%;
+    width:100%;
+    box-shadow: 8px 18px 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardFront
+{
+    backface-visibility: hidden;
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.cardBack
+{
+    height:100%;
+    position:absolute;
+    width:100%;
+    background-color: blue;
+    backface-visibility: hidden;
+    left:0;
+    top:0;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+
+.mainCard:hover .cardHold
+{
+    transform:rotateY(540deg);
 }
