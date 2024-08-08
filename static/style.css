@@ -86,5 +86,5 @@ footer a:hover { color: white; text-decoration: underline; }
 #deckHolder
 {
     display:grid;
-    grid-template-columns: auto;
+    grid-template-columns: repeat(3,1fr);
 }
