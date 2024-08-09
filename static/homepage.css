@@ -27,7 +27,7 @@
 
 }
 
-
+/*
 .homepage-bigtitle{
     top: 170px;
     width: 1300px;
@@ -49,5 +49,61 @@
     font-style: normal;
     font-weight: 600;
 }
+/*
+/* Make the header take up the full viewport */
+.homepage-bigtittle {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    position: sticky; /* Sticky position to allow scrolling effect */
+    top: 0;
+    z-index: 3;
+    background-color: #008000; /* Example background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+/* Styling for the text inside the header */
+.homepage-bigtittle-name {
+    color: #00001a;
+    font-family: Arial;
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    position: relative;
+}
+
+/* Add a fade-out effect */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+.homepage-bigtittle-name.sticky {
+    animation: fadeOut 1s forwards;
+}
+
+/* Trigger the fade-out animation when the user scrolls */
+body {
+    height: 200vh; /* Just to allow scrolling */
+    margin: 0;
+    padding: 0;
+}
+
+/* Use the :root or :after pseudo-element to trigger the animation */
+body::after {
+    content: '';
+    display: block;
+    height: 100vh; /* Adjust this value if you want the effect to trigger sooner or later */
+    position: relative;
+    z-index: 1;
+}
 
