@@ -98,12 +98,14 @@ body {
     padding: 0;
 }
 
-/* Use the :root or :after pseudo-element to trigger the animation */
+/*
+/* Use the :root or :after pseudo-element to trigger the animation 
 body::after {
     content: '';
     display: block;
-    height: 100vh; /* Adjust this value if you want the effect to trigger sooner or later */
+    height: 100vh; /* Adjust this value if you want the effect to trigger sooner or later 
     position: relative;
     z-index: 1;
 }
+*/
 
